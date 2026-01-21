@@ -1,0 +1,4 @@
+CREATE TABLE siswa (
+    nis INT(10) PRIMARY KEY,
+    kelas VARCHAR(10) NOT NULL
+);
