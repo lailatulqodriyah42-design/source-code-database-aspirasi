@@ -1,0 +1,9 @@
+CREATE TABLE input_aspirasi (
+    id_pelaporan INT(5) PRIMARY KEY AUTO_INCREMENT,
+    nis INT(10),
+    id_kategori INT(5),
+    lokasi VARCHAR(50),
+    ket VARCHAR(50),
+    FOREIGN KEY (nis) REFERENCES siswa(nis),
+    FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori)
+);
