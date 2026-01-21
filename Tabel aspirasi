@@ -1,0 +1,7 @@
+CREATE TABLE aspirasi (
+    id_aspirasi INT(5) PRIMARY KEY AUTO_INCREMENT,
+    status ENUM('Menunggu','Proses','Selesai') DEFAULT 'Menunggu',
+    id_kategori INT(5),
+    feedback INT(5),
+    FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori)
+);
